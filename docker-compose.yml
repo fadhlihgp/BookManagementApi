@@ -1,0 +1,6 @@
+﻿services:
+  bookauthormanagementapi:
+    image: bookauthormanagementapi
+    build:
+      context: .
+      dockerfile: BookAuthorManagementApi/Dockerfile
