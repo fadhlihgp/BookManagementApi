@@ -15,7 +15,7 @@ This is a Book Management System built with .NET 8.0 Web API. The system manages
 
 1. Clone the repository
 
-    `git clone <repository-url>` </br>
+    `git clone https://github.com/fadhlihgp/BookManagementApi.git` </br>
     `cd <project-directory>`
 
 
@@ -50,7 +50,7 @@ you can access the Swagger UI at _https://localhost:7187/swagger/index.html_ and
 ## Deployment Information
 
 1. [x] If you want to use this project directly, you can visit this link (Include with API Documentation): https://book-management-api.fadhlih.com/swagger/index.html
-2.[x] The project without API Documentation: https://book-management-api.fadhlih.com/
+2. [x] The project without API Documentation: https://book-management-api.fadhlih.com/
 
 
 
