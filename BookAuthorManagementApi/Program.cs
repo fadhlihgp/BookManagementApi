@@ -50,15 +50,15 @@ builder.Services.AddDbContext<AppDbContext>(optionsBuilder =>
     optionsBuilder.UseLazyLoadingProxies();
     optionsBuilder.UseNpgsql(builder.Configuration.GetConnectionString("DbConnection"));
 });
-builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddTransient<IPersistence, Persistence>();
-builder.Services.AddTransient<IUserRepository, UserRepository>();
-builder.Services.AddTransient<IAuthService, AuthService>();
-builder.Services.AddTransient<IBookService, BookService>();
-builder.Services.AddTransient<IAuthorService, AuthorService>();
-builder.Services.AddTransient<IPublisherService, PublisherService>();
-builder.Services.AddTransient<IJwtUtil, JwtUtil>();
-builder.Services.AddTransient<IGenericMemoryCacheService, GenericMemoryCacheService>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IPersistence, Persistence>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
+builder.Services.AddScoped<IPublisherService, PublisherService>();
+builder.Services.AddScoped<IJwtUtil, JwtUtil>();
+builder.Services.AddScoped<IGenericMemoryCacheService, GenericMemoryCacheService>();
 builder.Services.AddScoped<ExceptionHandlingMiddleware>();
 builder.Services.AddMemoryCache();
 
